@@ -1,0 +1,79 @@
+<html>
+
+    <head>
+          <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script type="text/javascript" src="../js/script.js"></script>
+       
+
+    
+    </head>
+    <body>
+       <video autoplay muted loop id="myVideo">
+  <source src="../images/search.mp4" type="video/mp4">
+</video>
+   
+
+    
+        <div class="content">
+             <center><img src="../images/logow.png" alt="logo" width="250" height="119.25">
+</center>
+    <ul>
+  <li><a href="../index.php">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="#search">Search</a></li>
+  <li style="float:right"><a class="active" href="../php/register.php">Regiter</a></li>
+  <li style="float:right"><a class="active" href="../php/login.php">Login</a></li>
+</ul>
+        
+     
+          
+     
+     <center>      
+          <hr>
+   
+         <br> <br>
+         
+    <label for="dis" class="txt">Where you looking at ?:</label><br><br>
+
+
+        
+    <form class="search" action="../php/result.php" method="post" id="values">
+        
+  <select id="district" class="range" name="rng">
+    <option>Select District</option>
+</select>
+         <br><br><br><br>
+          <br>
+         <label for="prc" class="txt">Specify Your Price</label><br><br>
+        <div class="slidecontainer">
+  <input type="range" min="20000" max="500000" value="150000" class="slider" id="myRange" name="myRange" oninput="outputUpdate(value)">
+            <p class="abt" >20000 $ - <output for=rangeInput class=num >20000</output>$</p>
+</div>
+         <br><br>
+         <p id="demo"></p>
+
+         <button type="submit" form="values" class="button"><span>Find My Next House !  </span></button>
+         
+         </form>
+        
+        <br><br><br>
+
+
+
+        
+        <label class="abt">Connect With us :</label>
+        <br>
+        <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a></center>
+</div>
+       
+      
+        
+
+
+    </body>
+</html>
+
